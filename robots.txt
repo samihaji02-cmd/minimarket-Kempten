@@ -1,0 +1,8 @@
+# Mini Market Kempten
+# Es gibt nichts zu verstecken: die Seite besteht aus drei oeffentlichen
+# Dokumenten, alle duerfen indexiert werden.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://minimarket-kempten.de/sitemap.xml

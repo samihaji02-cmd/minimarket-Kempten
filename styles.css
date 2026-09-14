@@ -1047,6 +1047,26 @@ body::before {
 }
 .legal-list dd { color: var(--text-mute); }
 
+/* Aufzählungen in der Datenschutzerklärung. Der Punkt wird selbst gesetzt
+   statt über list-style, damit er die Markenfarbe tragen kann. */
+.legal-bullets {
+  display: grid; gap: 8px;
+  margin: var(--s2) 0;
+  list-style: none;
+}
+.legal-bullets li {
+  position: relative;
+  padding-left: var(--s3);
+  color: var(--text-mute);
+  font-size: 0.95rem;
+}
+.legal-bullets li::before {
+  content: '';
+  position: absolute; left: 2px; top: 0.62em;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--neon);
+}
+
 /* Offene Stelle: bewusst auffällig, damit nichts davon versehentlich
    online geht. Gelb statt Neongrün – Grün ist hier die Markenfarbe und
    würde wie ein normales Element aussehen. */
