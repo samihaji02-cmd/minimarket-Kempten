@@ -31,6 +31,54 @@
      Kein Google-Fonts-Link: der würde bei jedem Aufruf die IP-Adresse
      der Besucher an Google übertragen. -->
 <link rel="stylesheet" href="styles.css">
+
+<!-- Maschinenlesbare Eckdaten fuer Google. Die Koordinaten zeigen auf das
+     Gebaeude Lindauer Str. 28 (Quelle: OpenStreetMap). Oeffnungszeit ist als
+     00:00-23:59 an allen sieben Tagen hinterlegt - so schreibt Google
+     durchgehend geoeffnete Betriebe vor. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "@id": "https://minimarket-kempten.de/#store",
+  "name": "Mini Market Kempten",
+  "description": "Automatenladen ohne Personal in Kempten (Allgäu), 24 Stunden an 7 Tagen geöffnet. Snacks, Getränke, Energydrinks, Kaffee to go und frisches Popcorn aus dem Automaten.",
+  "image": [
+    "https://minimarket-kempten.de/assets/photos/social-share.jpg",
+    "https://minimarket-kempten.de/assets/photos/aussen-tag.jpg"
+  ],
+  "url": "https://minimarket-kempten.de/",
+  "telephone": "+4917678326780",
+  "priceRange": "€",
+  "currenciesAccepted": "EUR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lindauer Str. 28",
+    "addressLocality": "Kempten (Allgäu)",
+    "addressRegion": "Bayern",
+    "postalCode": "87439",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.7219237,
+    "longitude": 10.3055054
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Lindauer+Str.+28%2C+87439+Kempten",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Apple Pay, Google Pay, Visa, Mastercard, Girocard",
+  "sameAs": [
+    "https://www.instagram.com/mini.market.kempten/",
+    "https://www.tiktok.com/@mini.market.kempt"
+  ]
+}
+</script>
+
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
