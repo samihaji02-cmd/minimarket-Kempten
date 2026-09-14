@@ -79,6 +79,67 @@
 }
 </script>
 
+<!-- Die Fragen und Antworten stehen wortgleich in der FAQ-Sektion weiter
+     unten. Weicht das eine vom anderen ab, wertet Google das Schema ab -
+     also beides zusammen aendern. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://minimarket-kempten.de/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wo gibt es in Kempten einen Kiosk, der 24 Stunden offen hat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An der Lindauer Str. 28 in Kempten (Allgäu). Der Mini Market ist ein unbemannter Automatenladen und damit rund um die Uhr zugänglich – nachts, sonntags und an Feiertagen genauso wie mittags. Einen Ladenschluss gibt es nicht, weil es keine Kasse gibt, die schließen müsste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Öffnungszeiten hat der Mini Market Kempten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Durchgehend: 24 Stunden an 7 Tagen der Woche, auch an Sonn- und Feiertagen. Wer spät abends noch Snacks in Kempten kaufen will oder nachts auf dem Heimweg vorbeikommt, steht nie vor einer verschlossenen Tür."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie bezahle ich am Automaten im Mini Market Kempten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kontaktlos am NAYAX-Terminal mit Apple Pay, Google Pay, Visa, Mastercard, Girocard, Discover oder Diners Club – Karte oder Handy einfach ranhalten. Wer bar zahlen möchte, wirft Scheine in den Einwurf unter dem Terminal oder Münzen in den Schlitz am Fuß des Automaten; Rückgeld kommt in Münzen zurück."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es Bier und Zigaretten am Automaten in Kempten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Bier steht gekühlt im Automaten, Regionales aus dem Allgäu ist dabei. Zigaretten laufen über einen eigenen Automaten, Vapes und E-Zigaretten stehen im Hauptautomaten. Alles davon gibt der Automat erst nach der Ausweiskontrolle frei."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wo kann ich in Kempten nachts Popcorn oder Kaffee kaufen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Im Mini Market an der Lindauer Straße. Der Popcorn-Automat poppt frisch, die Portion kostet 2,00 €. Kaffee to go kommt aus einem eigenen Heißgetränke-Automaten – beides rund um die Uhr, auch um drei Uhr nachts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie funktioniert die Ausweiskontrolle am Automaten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei allen Artikeln ab 18 – Bier, Tabak, E-Zigaretten und Erotikartikel – verlangt der Automat vor der Ausgabe einen gültigen Ausweis und prüft ihn selbst. Ohne Ausweis gibt er das Fach nicht frei, auch nicht nachts, wenn niemand im Laden ist."
+      }
+    }
+  ]
+}
+</script>
+
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -95,6 +156,7 @@
       <a href="#sortiment">Sortiment</a>
       <a href="#zahlung">Bezahlen</a>
       <a href="#ablauf">Ablauf</a>
+      <a href="#faq">Fragen</a>
       <a href="#standort">Standort</a>
     </nav>
 
@@ -541,6 +603,107 @@
           </figure>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======================= FAQ =======================
+       Als <details>/<summary> gebaut: das Auf- und Zuklappen kann der
+       Browser selbst, dafür kommt kein Zeilchen JavaScript dazu. Die
+       Antworten stehen im Markup und sind damit auch zugeklappt im
+       Quelltext lesbar – für Google wie für die Suche im Browser. -->
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow neon">Häufige Fragen</p>
+        <h2 id="faq-heading">Was Leute vorher wissen wollen</h2>
+        <p class="section-sub">
+          Die Fragen, die uns am häufigsten erreichen – von den Öffnungszeiten
+          bis zur Ausweiskontrolle am Automaten.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary><h3>Wo gibt es in Kempten einen Kiosk, der 24 Stunden offen hat?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              An der Lindauer Str. 28 in Kempten (Allgäu). Der Mini Market ist ein
+              unbemannter Automatenladen und damit rund um die Uhr zugänglich –
+              nachts, sonntags und an Feiertagen genauso wie mittags. Einen
+              Ladenschluss gibt es nicht, weil es keine Kasse gibt, die schließen
+              müsste.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>Welche Öffnungszeiten hat der Mini Market Kempten?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              Durchgehend: 24 Stunden an 7 Tagen der Woche, auch an Sonn- und
+              Feiertagen. Wer spät abends noch Snacks in Kempten kaufen will oder
+              nachts auf dem Heimweg vorbeikommt, steht nie vor einer
+              verschlossenen Tür.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>Wie bezahle ich am Automaten im Mini Market Kempten?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              Kontaktlos am NAYAX-Terminal mit Apple Pay, Google Pay, Visa,
+              Mastercard, Girocard, Discover oder Diners Club – Karte oder Handy
+              einfach ranhalten. Wer bar zahlen möchte, wirft Scheine in den
+              Einwurf unter dem Terminal oder Münzen in den Schlitz am Fuß des
+              Automaten; Rückgeld kommt in Münzen zurück.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>Gibt es Bier und Zigaretten am Automaten in Kempten?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              Ja. Bier steht gekühlt im Automaten, Regionales aus dem Allgäu ist
+              dabei. Zigaretten laufen über einen eigenen Automaten, Vapes und
+              E-Zigaretten stehen im Hauptautomaten. Alles davon gibt der Automat
+              erst nach der <a href="#ab18">Ausweiskontrolle</a> frei.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>Wo kann ich in Kempten nachts Popcorn oder Kaffee kaufen?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              Im Mini Market an der Lindauer Straße. Der Popcorn-Automat poppt
+              frisch, die Portion kostet 2,00 €. Kaffee to go kommt aus einem
+              eigenen Heißgetränke-Automaten – beides rund um die Uhr, auch um
+              drei Uhr nachts.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>Wie funktioniert die Ausweiskontrolle am Automaten?</h3></summary>
+          <div class="faq-answer">
+            <p>
+              Bei allen Artikeln ab 18 – Bier, Tabak, E-Zigaretten und
+              Erotikartikel – verlangt der Automat vor der Ausgabe einen gültigen
+              Ausweis und prüft ihn selbst. Ohne Ausweis gibt er das Fach nicht
+              frei, auch nicht nachts, wenn niemand im Laden ist.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <p class="cat-hint">
+        Noch eine Frage offen? Bei Problemen am Automaten:
+        <a href="tel:+4917678326780">0176 78326780</a>.
+      </p>
     </div>
   </section>
 
